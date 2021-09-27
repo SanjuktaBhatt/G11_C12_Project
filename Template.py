@@ -1,6 +1,6 @@
 import pygame
-#Import module
-
+# Import random module
+import 
 
 pygame.init()
 students=["John","Maria","Daniel","Martha","Jason"]
@@ -18,11 +18,16 @@ while carryOn:
   screen.fill((0,0,0))
   screen.blit(bgd_scaled,(0,0))
   screen.blit(teacher_scaled,(0,0))
-  #display a random name
   
+  # Select the font size 
+  font = pygame.font.Font(None,     )
   
+  # Call the choice() function from random module 
+  text = font.render(                (students), 1, (0,0,0))
   
-  
+  # Display the randomly chosen name at (130, 50) 
+  screen.blit(text, (         ))
+ 
   pygame.time.wait(300)
   pygame.display.flip()
     
